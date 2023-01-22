@@ -15,7 +15,7 @@ document.addEventListener("click", function (event) {
     let randomValue = "123456789abcdef";
     return randomValue[Math.floor(Math.random() * randomValue.length)];
   };
-  createDiv.style.backgroundColor = `#${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}`;
+  createDiv.style.backgroundColor = `#${createRandomHexCode()}${createRandomHexCode()}${createRandomHexCode()}${createRandomHexCode()}${createRandomHexCode()}${createRandomHexCode()}`;
   // created random HAX Color Code
   setTimeout(() => {
     createDiv.remove();
