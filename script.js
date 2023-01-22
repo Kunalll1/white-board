@@ -17,4 +17,8 @@ document.addEventListener("click", function (event) {
   };
   createDiv.style.backgroundColor = `#${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}`;
   // created random HAX Color Code
+  setTimeout(() => {
+    createDiv.remove();
+  }, 2000);
+  //removed the Created Div at 2sec
 });
