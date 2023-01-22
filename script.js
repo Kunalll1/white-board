@@ -11,4 +11,10 @@ document.addEventListener("click", function (event) {
   createDiv.style.left = `${x}px`;
   createDiv.style.top = `${y}px`;
   //when ever i click the mouse CIRCLE sell create there!
+  let createRandomHexCode = () => {
+    let randomValue = "123456789abcdef";
+    return randomValue[Math.floor(Math.random() * randomValue.length)];
+  };
+  createDiv.style.backgroundColor = `#${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}${createRandomHexCode}`;
+  // created random HAX Color Code
 });
